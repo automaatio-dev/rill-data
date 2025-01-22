@@ -11,9 +11,6 @@ _Revision Date: 1/21/2025_
 
 This image installs Rill based on their install script: `curl https://rill.sh | sh` taken from [https://www.rilldata.com/](https://www.rilldata.com/).
 
-**DockerHub**
-- [automaatio/rill-data](https://hub.docker.com/repository/docker/automaatio/rill-data/general)
-
 
 <!---------- BREAK START ------------->
 <!---------> &nbsp;<br>
@@ -22,7 +19,10 @@ This image installs Rill based on their install script: `curl https://rill.sh | 
 
 # Build Image
 
-Instructions to build and push this image:
+> **DockerHub** [automaatio/rill-data](https://hub.docker.com/repository/docker/automaatio/rill-data/general)
+
+- The Dockerfile is accesible here: [automaatio-dev / rill-data / Dockerfile](Dockerfile)
+- Instructions to build and push this image:
 
 ```
 docker buildx build --push --platform linux/amd64 \
