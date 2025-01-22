@@ -1,0 +1,32 @@
+# Docker-Compose
+
+################################################
+# Services
+################################################
+
+services:
+
+  ################################################
+  # Rill Data
+  ################################################
+
+  rill-data:
+    image: "automaatio/rill-data:latest"
+    container_name: "rill-data"
+    restart: "unless-stopped"
+    command: "bash -c '[ -f /rill-data/rill.yaml ] || echo \"# Default rill.yaml content\" > /rill-data/rill.yaml && rill start'" # Adds placeholder file for intial setup
+    ports:
+      - "9009:9009"
+    volumes:
+      - "/home/docker/rill-data:/rill-data"
+    networks:
+      - "rill-data"
+
+
+################################################
+# Networks
+################################################
+
+networks:
+  rill-data:
+    name: "rill-data"
