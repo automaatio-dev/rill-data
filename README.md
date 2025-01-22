@@ -19,10 +19,10 @@ This image installs Rill based on their install script: `curl https://rill.sh | 
 
 # Build Image
 
-> **DockerHub** [automaatio/rill-data](https://hub.docker.com/repository/docker/automaatio/rill-data/general)
+- **Docker Hub** image is accessible here: [automaatio/rill-data](https://hub.docker.com/repository/docker/automaatio/rill-data/general)
+- `Dockerfile` is accesible here: [automaatio-dev / rill-data / Dockerfile](Dockerfile)
 
-- The Dockerfile is accesible here: [automaatio-dev / rill-data / Dockerfile](Dockerfile)
-- Example instructions for how to build and push this image:
+Example instructions for how to build and push this image:
 
 ```
 docker buildx build --push --platform linux/amd64 \
