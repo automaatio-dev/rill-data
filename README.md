@@ -22,7 +22,7 @@ This image installs Rill based on their install script: `curl https://rill.sh | 
 > **DockerHub** [automaatio/rill-data](https://hub.docker.com/repository/docker/automaatio/rill-data/general)
 
 - The Dockerfile is accesible here: [automaatio-dev / rill-data / Dockerfile](Dockerfile)
-- Instructions to build and push this image:
+- Example instructions for how to build and push this image:
 
 ```
 docker buildx build --push --platform linux/amd64 \
@@ -38,7 +38,9 @@ docker buildx build --push --platform linux/amd64 \
 
 # Docker Compose
 
-Below is an example [docker-compose.yml](docker-compose.yml) for using the image. Access the web ui by going to `http://localhost:9009/`.
+Example [docker-compose.yml](docker-compose.yml) for running this image. 
+
+Access the web ui by going to `http://localhost:9009/`.
 
 ```
 # Docker-Compose
