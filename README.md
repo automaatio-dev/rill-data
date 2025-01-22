@@ -38,7 +38,7 @@ docker buildx build --push --platform linux/amd64 \
 
 # Docker Compose
 
-Example [docker-compose.yml](docker-compose.yml) for running this image. 
+- Example [docker-compose.yml](docker-compose.yml) for running this image. 
 
 Access the web ui by going to `http://localhost:9009/`.
 
